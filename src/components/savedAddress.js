@@ -5,7 +5,8 @@ import "../Js/custom.js";
 import  Header   from './header';
 import  Footer   from './footer';
 import ProfileSideBar from "./profileSideBar.js"
-
+//images
+import AdressPgImg1 from "../images/address page/• • •.png"
 
 function SavedAddress() {
   return (
@@ -39,7 +40,7 @@ function SavedAddress() {
                                         {/* <!-- Edit list button --> */}
                                         <div className="btn-group dropstart">
                                             <button type="button" className="btn dropdown-toggle addressDropdown border-0" data-bs-toggle="dropdown" aria-expanded="false">
-                                                <img src="./images/address page/• • •.png" alt="dotsImg" className="dostImg" />
+                                                <img src={AdressPgImg1} alt="dotsImg" className="dostImg" />
                                             </button>
                                             <ul className="dropdown-menu addressDropdownList ps-3">
                                             {/* <!-- Dropdown menu links --> */}
@@ -64,7 +65,7 @@ function SavedAddress() {
                                         {/* <!-- Edit list button --> */}
                                         <div className="btn-group dropstart">
                                             <button type="button" className="btn dropdown-toggle addressDropdown border-0" data-bs-toggle="dropdown" aria-expanded="false">
-                                                <img src="./images/address page/• • •.png" alt="dotsImg" className="dostImg" />
+                                                <img src={AdressPgImg1} alt="dotsImg" className="dostImg" />
                                             </button>
                                             <ul className="dropdown-menu addressDropdownList ps-3">
                                             {/* <!-- Dropdown menu links --> */}

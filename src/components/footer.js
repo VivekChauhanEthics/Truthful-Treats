@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom';
 import "../css/style.css";
 import "../Js/custom.js";
 
@@ -37,35 +38,35 @@ function Footer  () {
             <div className="col-lg-2 col-6 mb-4">
               <ul className="list-unstyled">
                   <li><h5 className="footerHeading">Information</h5></li>
-                  <li><a href="./about.html" className="footerListItems text-decoration-none">About Us</a></li>
-                  <li><a href="./Blog.html" className="footerListItems text-decoration-none">Blogs</a></li>
-                  <li><a href="./career.html" className="footerListItems text-decoration-none">Careers</a></li>
+                  <li><NavLink to="/about" className="footerListItems text-decoration-none">About Us</NavLink></li>
+                  <li><NavLink to="/blogs" className="footerListItems text-decoration-none">Blogs</NavLink></li>
+                  <li><NavLink to="/career" className="footerListItems text-decoration-none">Careers</NavLink></li>
               </ul>
             </div>
             <div className="col-lg-2 col-6 mb-4">
               <ul className="list-unstyled ">
                   <li><h5 className="footerHeading">Terms & Policy</h5></li>
-                  <li><a href="./shippingPolicy.html" className="footerListItems text-decoration-none">Shipping & return policy</a></li>
-                  <li><a href="./termofService.html" className="footerListItems text-decoration-none">Terms of service</a></li>
-                  <li><a href="./privacyPolicy.html" className="footerListItems text-decoration-none">Privacy Policy</a></li>
+                  <li><NavLink to="/shippingpolicy" className="footerListItems text-decoration-none">Shipping & return policy</NavLink></li>
+                  <li><NavLink to="/termsofservices" className="footerListItems text-decoration-none">Terms of service</NavLink></li>
+                  <li><NavLink to="/privacypolicy" className="footerListItems text-decoration-none">Privacy Policy</NavLink></li>
               </ul>
             </div>
             <div className="col-lg-2 col-6 mb-4">
               <ul className="list-unstyled">
                   <li><h5 className="footerHeading">Help</h5></li>
-                  <li><a href="./contactus.html" className="footerListItems text-decoration-none">Contact Us</a></li>
-                  <li><a href="./b2bBulkOrder.html" className="footerListItems text-decoration-none">B2B/Bulk Order</a></li>
-                  <li><a href="./profile.html" className="footerListItems text-decoration-none">My account</a></li>
-                  <li><a href="./orders.html" className="footerListItems text-decoration-none">Track Order</a></li>
-                  <li><a href="./FAQ.html" className="footerListItems text-decoration-none">F.A.Q.</a></li>
+                  <li><NavLink to="/contactus" className="footerListItems text-decoration-none">Contact Us</NavLink></li>
+                  <li><NavLink to="/b2bbulkoreder" className="footerListItems text-decoration-none">B2B/Bulk Order</NavLink></li>
+                  <li><NavLink to="/profile" className="footerListItems text-decoration-none">My account</NavLink></li>
+                  <li><NavLink to="/orders" className="footerListItems text-decoration-none">Track Order</NavLink></li>
+                  <li><NavLink to="/faq" className="footerListItems text-decoration-none">F.A.Q.</NavLink></li>
               </ul>
             </div>
             <div className="col-lg-3 col-6 mb-4">
               <div className="row">
                 <ul className="list-unstyled">
                     <li><h5 className="footerHeading">Contact</h5></li>
-                    <li><a href="" className="footerListItems text-decoration-none">care@truthtreats.com</a></li>
-                    <li><a href="" className="footerListItems text-decoration-none">+91 8888888888</a></li>
+                    <li><NavLink to="" className="footerListItems text-decoration-none">care@truthtreats.com</NavLink></li>
+                    <li><NavLink to="" className="footerListItems text-decoration-none">+91 8888888888</NavLink></li>
                 </ul>
               </div>
               <div className="row mt-3">

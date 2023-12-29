@@ -1225,7 +1225,7 @@ html, body, h1, h2, h3, p, ul, li {
 }
 .categoryheading{
     font-size: 24px;
-    font-family: Museo;
+    font-family: 'Museo'sans-serif;
     font-weight: 900;
     color: rgba(17, 24, 34, 1);
 }
@@ -1261,7 +1261,7 @@ html, body, h1, h2, h3, p, ul, li {
     color: rgba(216, 51, 85, 1);
     font-size: 16px;
     font-weight: 700;
-    font-family: 'Museo';
+    font-family: 'Museo'sans-serif;
 }
 
 
@@ -1507,7 +1507,7 @@ html, body, h1, h2, h3, p, ul, li {
     height: 80px;
   }
   .visioncardText{
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Titillium Web' sans-serif;
     font-size: 18px;
     font-weight: 600;
     line-height: 16px;
@@ -1521,7 +1521,7 @@ html, body, h1, h2, h3, p, ul, li {
     font-weight: 400;
   }
   .visiontext{
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Titillium Web' sans-serif;
     font-size: 16px;
   }
   .visionBtn{
@@ -1548,7 +1548,7 @@ html, body, h1, h2, h3, p, ul, li {
     margin-bottom: 60px;
   }
   .qualitysUBHeading{
-    font-family: Museo;
+    font-family: 'Museo' sans-serif;
     font-size: 24px;
     font-weight: 900;
     line-height: 29px;
@@ -1803,7 +1803,7 @@ font-size: 40px;
 font-weight: 400;
 }
 .promistext{
-font-family: 'Titillium Web', sans-serif;
+font-family: 'Titillium Web' sans-serif;
 font-size: 16px;
 }
 .promisBtn{
@@ -1824,7 +1824,7 @@ font-size: 16px;
     font-size: 20px;
 }
 .promistext{
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Titillium Web' sans-serif;
     font-size: 13px;
 }
 .promisBtn{
@@ -1843,7 +1843,7 @@ font-size: 16px;
     font-size: 25px;
 }
 .promistext{
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Titillium Web' sans-serif;
     font-size: 15px;
 }
 .promisBtn{
@@ -1862,7 +1862,7 @@ font-size: 16px;
     font-size: 30px;
 }
 .promistext{
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Titillium Web' sans-serif;
     font-size: 16px;
 }
 .promisBtn{
@@ -1881,7 +1881,7 @@ font-size: 16px;
     font-size: 40px;
 }
 .promistext{
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Titillium Web' sans-serif;
     font-size: 16px;
 }
 .promisBtn{
@@ -1906,7 +1906,7 @@ font-size: 16px;
 }
 .ZoomText{
     font-size: 12px;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Titillium Web' sans-serif;
     color: rgb(201, 198, 198);
 }
 .ZoomIcon{
@@ -1924,19 +1924,19 @@ font-size: 16px;
 
 /* right side */
 .premiumHeading{
-    font-family: 'A Love of Thunder', sans-serif;
+    font-family: 'A Love of Thunder';
     font-size: 40px;
     font-weight: 400;
 }
 .rating{
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Titillium Web' sans-serif;
     font-size: 12px;
     font-weight: 400;
     text-align: left;
     color: rgba(140, 140, 140, 1);
 }
 .Size{
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Titillium Web' sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 27px;
@@ -1950,13 +1950,13 @@ font-size: 16px;
     color: rgba(17, 24, 34, 1);
     font-weight: 700;
     font-size: 17px;
-    font-family: Museo;
+    font-family: 'Museo'sans-serif;
     padding: 10px;
     border-radius: 46px;
     background-color: rgba(251, 237, 176, 1);
 }
 .quantity{
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Titillium Web' sans-serif;
     font-size: 18px;
     font-weight: 400;
     color: rgba(140, 140, 140, 1);
@@ -1976,24 +1976,24 @@ font-size: 16px;
     font-size: 15px;
 }
 .couponHeading{
-    font-family: Museo;
+    font-family: 'Museo'sans-serif;
     font-size: 18px;
     font-weight: 700;   
 }
 .couponText{
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Titillium Web' sans-serif;
     font-size: 14px;
     font-weight: 400;
     color: #8C8C8C;
 }
 
 .PremiumPrice{
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Titillium Web' sans-serif;
     font-size: 42px;
     font-weight: 700;
 }
 .DisPrice{
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Titillium Web' sans-serif;
     font-size: 30px;
     font-weight: 400;
 }
@@ -2001,13 +2001,13 @@ font-size: 16px;
     margin-top: 11px;
 }
 .discountText{
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Titillium Web' sans-serif;
     font-size: 16px;
     font-weight: 400;
     background-color: rgba(254, 243, 212, 1);
 }
 .taxesText{
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Titillium Web' sans-serif;
     font-size: 15px;
     font-weight: 400; 
     color: #8C8C8C;   
@@ -2015,7 +2015,7 @@ font-size: 16px;
 .premiumBtn{
     width: 130px;
     height: 40px;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Titillium Web' sans-serif;
     font-size: 17px;
     font-weight: 700;
     
@@ -2299,7 +2299,7 @@ font-size: 16px;
     width: 82%;
     background-color: rgba(242, 242, 242, 1);
     border-radius: 15px;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Titillium Web' sans-serif;
     font-size: 19px;
     font-weight: 600;
     margin-left: 14%;
@@ -2309,14 +2309,14 @@ font-size: 16px;
     width: 82%;
     background-color: rgba(242, 242, 242, 1);
     border-radius: 15px;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Titillium Web' sans-serif;
     font-size: 19px;
     font-weight: 600;
     
 }
 .accordionBodyText{
     width: 100%;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Titillium Web' sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -2650,7 +2650,7 @@ font-size: 16px;
     background-color: rgba(237, 233, 244, 1);
 }
 .combosFiftSectionText{
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Titillium Web' sans-serif;
     font-size: 18px;
     font-weight: 600;
     line-height: 36px;
@@ -2708,21 +2708,21 @@ font-size: 16px;
     
 }
 .accordionBg1{
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Titillium Web' sans-serif;
     font-size: 17px;
     background-color: rgba(254, 243, 212, 1);
     border-radius: 15px;
    
 }
 .accordionBg2{
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Titillium Web' sans-serif;
     font-size: 17px;
     background-color: rgba(254, 243, 212, 1);
     border-radius: 15px;
     
 }
 .accordionBg3{
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Titillium Web' sans-serif;
     font-size: 17px;
     background-color: rgba(254, 243, 212, 1);
     border-radius: 15px;
@@ -2862,7 +2862,7 @@ font-size: 16px;
  .policypagessubHeadings{
     margin-top: 30px;
     width: 70%;
-    font-family: Museo;
+    font-family: 'Museo' sans-serif;
     font-size: 24px;
     font-weight: 900;
     line-height: 29px;
@@ -2872,7 +2872,7 @@ font-size: 16px;
  }
  .shippingPolicyText{
     width: 70%;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Titillium Web' sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 30px;
@@ -2884,7 +2884,7 @@ font-size: 16px;
     width: 65%;
  }
  .shippingPolicyTextli{
-    font-family:'Titillium Web', sans-serif;
+    font-family:'Titillium Web' sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 30px;
@@ -3393,12 +3393,20 @@ font-size: 16px;
     text-align: left;
 }
 .profileSideBarActive{
+    width: 100% !important;
     margin-top: 25px;
-    border-radius: 50px;
-    padding: 10px 10px 10px 30px;
+    padding: 0px 0px 0px 0px;
 }
-.profileLeftInCon .profileSideBarActive.active, .sideBarul .profileSideBarActive.show {
+.icontext{
+    padding: 10px 60px 10px 20px;
+    color: rgba(54, 54, 54, 1) !important;
+}
+.profileSideBarActive .active {
+    width: 100% !important;
     background-color:rgba(254, 243, 212, 1) !important;
+    padding: 10px 60px 10px 20px;
+    border-radius: 50px;
+    color: rgba(0, 0, 0, 1);
 }
 
 
@@ -3690,21 +3698,34 @@ font-size: 16px;
         margin-top: 20px;
     }
     .icontext{
-        color: rgba(90, 90, 90, 1) !important;
-        font-size: 13px;
-        margin-right: 6px;
+        width: 100% !important;
+        font-size: 11px;
+        margin-right: 0px;
+        padding: 10px 10px 10px 10px;
+        display: flex;
+    }
+    .icontext .text-dark{
+        width: 100% !important;
+    }
+    .profileSideBarActive .active {
+        width: 100% !important;
+        padding: 10px 10px 10px 10px;
     }
     .userName{
         font-size: 22px;
         text-align: left;
     }
     .sideBarul{
+        width: 100% !important;
         display: flex;
+        gap:5px
     }
     .vertical-line {
         margin: 0 0 0 10%;
     }
-    
+    .profileSideBarActive {
+        width: 25% !important;
+    }
     /* right container */
     .userName2{
         font-size: 25px;
@@ -3769,7 +3790,24 @@ font-size: 16px;
         margin-top: 25px;
     }
     .icontext{
-        color: rgba(90, 90, 90, 1) !important;
+        width: 100% !important;
+        font-size: 11px;
+        margin-right: 0px;
+        padding: 10px 0px 10px 10px;
+        display: flex;
+    }
+    .icontext .text-dark{
+        width: 100% !important;
+    }
+    .icontext .text-dark{
+        width: 100% !important;
+    }
+    .profileSideBarActive .active {
+        width: 100% !important;
+        padding: 10px 0px 10px 10px;
+    }
+    .sideBarul{
+        width: 100% !important;
     }
     .userName{
         font-size: 25px;
@@ -4499,6 +4537,7 @@ font-size: 16px;
 @media only screen and (min-width: 426px) and (max-width: 767px) {
     /* right container */
     .addressrightContainer{
+        width: 100%;
         margin-top: 35px;
     }
     .addressPgRows{
@@ -4520,7 +4559,10 @@ font-size: 16px;
         margin-right: 10px;
         margin-bottom:  70px;
     }
-
+    .profileRow{
+        display: flex;
+        flex-direction: column;
+    }
     .addressDropdownList, strong{
         min-width: 8rem;
         height: 97px;
@@ -7056,7 +7098,7 @@ font-size: 16px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 440px;
+    height: 475px;
 }
 .blogPgTopRightCont{
     padding: 50px 0px 0 40px;
@@ -9017,7 +9059,7 @@ font-size: 16px;
     border-top: none;
 }
 .FAQaccordionBg1 .accordion-button{
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Titillium Web' sans-serif;
     font-size: 17px;
     background-color: rgba(254, 243, 212, 1) !important;
     border-radius: 15px !important;

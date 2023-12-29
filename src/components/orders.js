@@ -1,10 +1,16 @@
 import React from 'react'
 import "../css/style.css";
 import "../Js/custom.js";
-
+//components
 import  Header   from './header';
 import  Footer   from './footer';
 import ProfileSideBar from "./profileSideBar.js"
+//images
+import OrdersPgImg1 from "../images/order page/Artboard 5 3.png"
+import OrdersPgImg2 from "../images/order page/Frame 48096768.png"
+import OrdersPgImg3 from "../images/order page/Frame 48096766.png"
+
+
 
 
 function Orders() {
@@ -24,7 +30,7 @@ function Orders() {
                                 <div className="OrderId">Order Id: <span className="text-warning">1101543123121xknk</span></div>
                                 <div className="row mt-4 OrderTrackRow">
                                     <div className="col-sm-2 col-md-2 text-center">
-                                        <img src="./images/order page/Artboard 5 3.png" alt="orderImg" className="orderTopImg" />
+                                        <img src={OrdersPgImg1} alt="orderImg" className="orderTopImg" />
                                         <h3 className="orderPgHeading d-block d-sm-none text-center">Premium Californian Almonds (200gm)</h3>
                                     </div>
                                     <div className="col-sm-9 col-md-9">
@@ -59,7 +65,7 @@ function Orders() {
                                                     <tr>
                                                         <th scope="row" className="border-0">
                                                             <div className="d-flex">
-                                                                <img src="./images/order page/Artboard 5 3.png" alt="postorderImg" className="postOrderImg1" />
+                                                                <img src={OrdersPgImg1} alt="postorderImg" className="postOrderImg1" />
                                                                 <div className="ms-3">
                                                                     <h3 className="postOrderHeadings">Premium Californian Almonds (200gm)</h3>
                                                                     <p className="postOrderText">Order No.:  1101543</p>
@@ -81,7 +87,7 @@ function Orders() {
                                                     <tr>
                                                         <th scope="row" className="border-0">
                                                             <div className="d-flex">
-                                                                <img src="./images/order page/Frame 48096768.png" alt="postorderImg" className="postOrderImg" />
+                                                                <img src={OrdersPgImg2} alt="postorderImg" className="postOrderImg" />
                                                                 <div className="ms-3">
                                                                     <h3 className="postOrderHeadings">Premium Californian Almonds (200gm)</h3>
                                                                     <p className="postOrderText">Order No.:  1101543</p>
@@ -103,7 +109,7 @@ function Orders() {
                                                     <tr>
                                                         <th scope="row" className="border-0">
                                                             <div className="d-flex">
-                                                                <img src="./images/order page/Frame 48096766.png" alt="postorderImg" className="postOrderImg" />
+                                                                <img src={OrdersPgImg3} alt="postorderImg" className="postOrderImg" />
                                                                 <div className="ms-3">
                                                                     <h3 className="postOrderHeadings">Premium Californian Almonds (200gm)</h3>
                                                                     <p className="postOrderText">Order No.:  1101543</p>
