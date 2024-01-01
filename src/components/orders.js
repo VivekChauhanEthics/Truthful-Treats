@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom';
 import "../css/style.css";
 import "../Js/custom.js";
 //components
@@ -6,11 +7,11 @@ import  Header   from './header';
 import  Footer   from './footer';
 import ProfileSideBar from "./profileSideBar.js"
 //images
-import OrdersPgImg1 from "../images/order page/Artboard 5 3.png"
-import OrdersPgImg2 from "../images/order page/Frame 48096768.png"
-import OrdersPgImg3 from "../images/order page/Frame 48096766.png"
-
-
+import OrdersPgImg1 from "../images/order page/Artboard 5 3.png";
+import OrdersPgImg2 from "../images/order page/Frame 48096768.png";
+import OrdersPgImg3 from "../images/order page/Frame 48096766.png";
+import OrederPgRefund from "../images/order page/Vector.png";
+import OrdersPgBlueStar from "../images/order page/Group 37672.png";
 
 
 function Orders() {
@@ -31,10 +32,16 @@ function Orders() {
                                 <div className="row mt-4 OrderTrackRow">
                                     <div className="col-sm-2 col-md-2 text-center">
                                         <img src={OrdersPgImg1} alt="orderImg" className="orderTopImg" />
-                                        <h3 className="orderPgHeading d-block d-sm-none text-center">Premium Californian Almonds (200gm)</h3>
+                                        <h3 className="orderPgHeading d-block d-sm-none text-center">
+                                          Premium Californian Almonds (200gm) + Dried Sliced Cranberries (200gm)
+                                          Roasted & Salted Cashews (200gm)
+                                        </h3>
                                     </div>
                                     <div className="col-sm-9 col-md-9">
-                                        <h3 className="orderPgHeading d-none d-md-block">Premium Californian Almonds (200gm)</h3>
+                                        <h3 className="orderPgHeading d-none d-md-block">
+                                          Premium Californian Almonds (200gm) + Dried Sliced Cranberries (200gm)
+                                          Roasted & Salted Cashews (200gm)
+                                        </h3>
                                         <div className="modal-body">
                                             <div className="progress-track">
                                                 <ul id="progressbar">
@@ -56,9 +63,9 @@ function Orders() {
                                                 <thead className="orderTable border-0">
                                                     <tr>
                                                         <th scope="col" className="bg-transparent border-0 theadText">Item</th>
-                                                        <th scope="col" className="bg-transparent border-0 text-center theadText">Quantity</th>
+                                                        <th scope="col" className="bg-transparent border-0 text-center theadText">Price</th>
                                                         <th scope="col" className="bg-transparent border-0 theadText">Status</th>
-                                                        <th scope="col" className="bg-transparent border-0 theadText">Invoice</th>
+                                                        <th scope="col" className="bg-transparent border-0 theadText">Actions</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -73,14 +80,15 @@ function Orders() {
                                                                 </div>
                                                             </div>
                                                         </th>
-                                                        <td className="border-0 text-center">1</td>
-                                                        <td className="border-0 postOrderHeadings">Delivered</td>
+                                                        <td className="border-0 text-center">Rs. 349</td>
+                                                        <td className="border-0 postOrderHeadings">In Tansite</td>
                                                         <td className="border-0">
-                                                            <div className="orderPgIcons ms-2">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-download" viewBox="0 0 16 16">
-                                                                    <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
-                                                                    <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                                                            <div className="orderPgIcons">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt " viewBox="0 0 16 16">
+                                                                    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                                                                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
                                                                 </svg>
+                                                                <NavLink to="/orderDetail" className='cursor-pointer orderDetailLink'>Track Order</NavLink>
                                                             </div>
                                                         </td>
                                                     </tr>
@@ -95,14 +103,12 @@ function Orders() {
                                                                 </div>
                                                             </div>
                                                         </th>
-                                                        <td className="border-0 text-center">1</td>
-                                                        <td className="border-0 postOrderHeadings">Delivered</td>
+                                                        <td className="border-0 text-center">Rs. 429</td>
+                                                        <td className="border-0 postOrderHeadings">Cancelled</td>
                                                         <td className="border-0">
-                                                            <div className="orderPgIcons ms-2">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-download" viewBox="0 0 16 16">
-                                                                    <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
-                                                                    <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
-                                                                </svg>
+                                                            <div className="orderPgIcons">
+                                                                <img src={OrederPgRefund} alt='' className='img-fluid mt-1' style={{width: "16px", height: "16px"}}/>
+                                                                <span className='cursor-pointer'>Refund Completed</span>
                                                             </div>
                                                         </td>
                                                     </tr>
@@ -117,14 +123,25 @@ function Orders() {
                                                                 </div>
                                                             </div>
                                                         </th>
-                                                        <td className="border-0 text-center">2</td>
-                                                        <td className="border-0 postOrderHeadings">Delivered</td>
+                                                        <td className="border-0 text-center">Rs. 379</td>
+                                                        <td className="border-0 postOrderHeadings">
+                                                           <div className='OrdersPgBlueStarCon'>
+                                                                <span>Delivered on 26 Jan, 2023</span>
+                                                                <span>
+                                                                    <img src={OrdersPgBlueStar} alt='' className='img-fluid' />
+                                                                    <NavLink to="/feedback" className='blueText'>Rate & review Product</NavLink>
+                                                                </span>
+                                                           </div>
+                                                        </td>
                                                         <td className="border-0">
-                                                            <div className="orderPgIcons ms-2">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-download" viewBox="0 0 16 16">
-                                                                    <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
-                                                                    <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                                                            <div className="orderPgIcons">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
+                                                                    <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2z"/>
+                                                                    <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466"/>
                                                                 </svg>
+                                                                <span className='cursor-pointer'>
+                                                                   Repeat order
+                                                                </span>
                                                             </div>
                                                         </td>
                                                     </tr>

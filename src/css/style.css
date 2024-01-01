@@ -3902,9 +3902,9 @@ font-size: 16px;
 }
 .orderPgHeading{
     font-family: 'Titillium Web' sans-serif;
-    font-size: 24px;
+    font-size: 17px;
     font-weight: 600;
-    line-height: 37px;
+    line-height: 30px;
     letter-spacing: 0em;
     text-align: left;
     color: rgba(17, 24, 34, 1);
@@ -4000,11 +4000,11 @@ font-size: 16px;
 #progressbar #step1:before,
 #progressbar #step1:after {
     margin-left: 25px !important;
-    background: rgba(216, 51, 85, 1);
+    background: rgba(0, 138, 0, 1);
 }
 #progressbar #step2:before,
 #progressbar #step2:after {
-    background: rgba(216, 51, 85, 1);
+    background: rgba(0, 138, 0, 1);
    
 }
 .postorderHeading{
@@ -4019,10 +4019,46 @@ font-size: 16px;
     background-color: rgba(236, 236, 236, 1) !important;
 }
 .orderPgIcons{
-    background-color: rgba(236, 236, 236, 1);
-    width: 30px;
-    height:30px ;
-    padding-left: 7px;
+    display: flex;
+    gap: 5px !important;
+    font-family: 'Titillium Web' sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.orderPgIcons .bi-geo-alt{
+    color: #007bff;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.orderPgIcons .bi-arrow-clockwise{
+    color: rgba(245, 150, 51, 1);
+    margin-top: 5px;
+    cursor: pointer;
+}
+.orderPgIcons {
+    margin-top: 5px;
+}
+
+.orderDetailLink{
+    color: rgba(17, 24, 34, 1);
+    font-family: 'Titillium Web'sans-serif;
+}
+.OrdersPgBlueStarCon{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Titillium Web' sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.OrdersPgBlueStarCon .blueText{
+    color: #007bff;
+    cursor: pointer;
 }
 .postOrderImg1{
     width: 86.32px;
@@ -4037,14 +4073,14 @@ font-size: 16px;
 }
 .postOrderHeadings{
     font-family: 'Titillium Web'sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0em;
     color: rgba(17, 24, 34, 1);
 }
 .postOrderText{
-    font-family: 'Titillium Web'sans-serif;
+    font-family: 'Titillium Web' sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
@@ -4052,6 +4088,57 @@ font-size: 16px;
     text-align: left;
     color: rgba(90, 90, 90, 1);
 }
+.progress-container {
+    height: 220px;
+    width: 2px;
+    background-color: rgba(140, 140, 140, 1);
+    margin: 5px;
+    display: inline-block;
+    position: relative;
+}
+
+.step-circle {
+    width: 10px;
+    height: 10px;
+    background-color: #4caf50;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.step-circle2 {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(54, 54, 54, 1);
+    border-radius: 50%;
+    margin-bottom: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.step-circle2:nth-child(2) {
+   top: 55px;
+}
+
+.step-circle2:nth-child(3) {
+   top: 110px;
+}
+
+.step-circle2:nth-child(4) {
+   top: 165px;
+}
+.step-circle2:nth-child(5) {
+    top: 215px;
+ }
+
+.progress-bar {
+    height: 0;
+    width: 100%;
+    background-color: #4caf50;
+    transition: height 0.5s;
+}
+
 @media only screen and (min-width: 320px) and (max-width: 425px) {
     .OrderPgRightCon{
         padding-left: 0px !important;
@@ -5992,6 +6079,7 @@ font-size: 16px;
 .orderdetailIcon1{
     width: 23.03px;
     height: 22.79px;
+    background-color: rgba(254, 243, 212, 1);
 }
 .orderdetailIcon2{
     width: 15px;
@@ -6050,6 +6138,36 @@ font-size: 16px;
     line-height: 18px;
     letter-spacing: 0em;
     color: rgba(140, 140, 140, 1);
+}
+.orderdetailBottText{
+    font-family: 'Titillium Web'sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    color: rgba(54, 54, 54, 1);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.orderdetailBottText span{
+    font-family: 'Titillium Web' sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 10px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(140, 140, 140, 1);
+}
+.orderdetailBottheading{
+    font-family: 'Titillium Web' sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(140, 140, 140, 1);
+
 }
 .orderdetailBtn{
     width: 90px;
@@ -6262,6 +6380,28 @@ font-size: 16px;
         padding: 0 15px 0 20px;
     }
 }
+/***** cancel order page css *****/
+.cancelOrderBottText{
+    font-family: 'Titillium Web'sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    color: rgba(54, 54, 54, 1);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.cancelOrderBottText span{
+    font-family: 'Titillium Web' sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 10px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(140, 140, 140, 1);
+}
+
 
 
 /****** contact us page css *****/

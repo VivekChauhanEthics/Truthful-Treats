@@ -1,9 +1,15 @@
 import React from 'react'
 import "../css/style.css";
 import "../Js/custom.js";
-
+//components
 import  Header   from './header.js';
 import  Footer   from './footer.js';
+//images
+import FeedbackPgImg1 from "../images/order page/Frame 48096768.png"
+import FeedbackPgImg2 from "../images/combos page/Group 37669.png"
+import FeedbackPgImg3 from "../images/feedback page/Vector.png"
+import FeedbackPgImg4 from "../images/feedback page/Add A Photo.png"
+
 
 function Feedback() {
   return (
@@ -35,7 +41,7 @@ function Feedback() {
                         <div className="col-lg-9 feedbackrightcont">
                             <div className="list-unstyled d-flex">
                                 <ul className="list-unstyled me-auto d-flex">
-                                    <li><img src="./images/order page/Frame 48096768.png" alt="" className="img-fluid paymentPgimg2 " /></li>
+                                    <li><img src={FeedbackPgImg1} alt="" className="img-fluid paymentPgimg2 " /></li>
                                     <ul className="list-unstyled">
                                         <li><p className="ms-2 feedbackProductText">Premium Californian Almonds (200gm)<span className="text-body-tertiary ms-2">x 2</span></p></li>
                                         <li><p className="ms-2 feedbackProductSubText">Order No.:  1101543</p></li>
@@ -48,11 +54,11 @@ function Feedback() {
                             <div>
                                 <p className="feedbackRatingText">Rate this product</p>
                                 <ul className="list-unstyled d-flex d-grid gap-2">
-                                    <li><img src="./images/combos page/Group 37669.png" alt="rating star" className="img-fluid" /></li>
-                                    <li><img src="./images/combos page/Group 37669.png" alt="rating star" className="img-fluid" /></li>
-                                    <li><img src="./images/combos page/Group 37669.png" alt="rating star" className="img-fluid" /></li>
-                                    <li><img src="./images/combos page/Group 37669.png" alt="rating star" className="img-fluid" /></li>
-                                    <li><img src="./images/feedback page/Vector.png" alt="rating star" className="img-fluid " style="height: 19PX; width: 19PX;"/></li>
+                                    <li><img src={FeedbackPgImg2} alt="rating star" className="img-fluid" /></li>
+                                    <li><img src={FeedbackPgImg2} alt="rating star" className="img-fluid" /></li>
+                                    <li><img src={FeedbackPgImg2} alt="rating star" className="img-fluid" /></li>
+                                    <li><img src={FeedbackPgImg2} alt="rating star" className="img-fluid" /></li>
+                                    <li><img src={FeedbackPgImg3} alt="rating star" className="img-fluid " style={{width: "19px", height:"19px"}}/></li>
                                     <li><p className="ps-4 feedbackRatingSubText pt-1">Excellent</p></li>
                                 </ul>
                             </div>
@@ -63,7 +69,7 @@ function Feedback() {
                                     <textarea className="form-control feedbackPgInput" id="feedbackMessage" rows="5" placeholder="Please leave us a message"></textarea>
                                 </div>
                                 <div className="feedbackBtnCont">
-                                    <span><img src="./images/feedback page/Add A Photo.png" alt="photoImg" className="img-fluid p-2 feedbackPhoto" /></span>
+                                    <span><img src={FeedbackPgImg4} alt="photoImg" className="img-fluid p-2 feedbackPhoto" /></span>
                                     <button type="submit" className="btn btn-danger float-end feedbackSubBtn">Submit</button>
                                 </div>
                             </div>
@@ -75,7 +81,6 @@ function Feedback() {
         </main>
         <Footer />
     </>
-    
   )
 }
 

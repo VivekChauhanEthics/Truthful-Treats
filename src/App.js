@@ -30,6 +30,8 @@ import PrivacyPolicy from "./components/privacyPolicy.js";
 import ShippingPolicy from "./components/shippingPolicy.js";
 import SignUp from "./components/signUp.js";
 import TermsOfServices from "./components/termsOfServices.js";
+import OrderDetail from "./components/orderDetail.js";
+import CancelOrder from './components/cancelOrder.js';
 
 
 function App() {
@@ -57,10 +59,12 @@ function App() {
         <Route path="/forgetpassword" element={<ForgetPassword />} />
         <Route path="/feedback" element={<Feedback />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/orderDetail" element={<OrderDetail />} />
         <Route path="/privacypolicy" element={<PrivacyPolicy />} />
         <Route path="/shippingpolicy" element={<ShippingPolicy />} />
         <Route path="/signUp" element={<SignUp />} />
         <Route path="/termsofservices" element={<TermsOfServices />} />
+        <Route path="/cancelOrder" element={<CancelOrder />} />
       </Routes>
     </Router>
   );
