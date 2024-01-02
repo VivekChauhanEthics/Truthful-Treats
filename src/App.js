@@ -32,7 +32,7 @@ import SignUp from "./components/signUp.js";
 import TermsOfServices from "./components/termsOfServices.js";
 import OrderDetail from "./components/orderDetail.js";
 import CancelOrder from './components/cancelOrder.js';
-
+import PDP from './components/PDP.js';
 
 function App() {
   return (
@@ -65,6 +65,7 @@ function App() {
         <Route path="/signUp" element={<SignUp />} />
         <Route path="/termsofservices" element={<TermsOfServices />} />
         <Route path="/cancelOrder" element={<CancelOrder />} />
+        <Route path="/pdp" element={<PDP />} />
       </Routes>
     </Router>
   );

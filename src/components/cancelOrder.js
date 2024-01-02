@@ -45,12 +45,12 @@ function CancelOrder() {
                                     </li>
                                     <li className="d-flex mt-4">
                                         <span className="orderdetailIcon1">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3 img-fluid" viewBox="0 0 16 16">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3 img-fluid mb-1 ms-1" viewBox="0 0 16 16">
                                               <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
                                             </svg>
                                         </span>
                                         <span>
-                                            <p className="orderdetailSubheading">add this same product on cart</p>
+                                            <NavLink to=""  className="orderdetailSubheading">add this same product on cart</NavLink>
                                         </span >
                                     </li>
                                 </ul>
@@ -81,10 +81,8 @@ function CancelOrder() {
                                 <div className="modal-body">
                                     <div className="progress-track">
                                         <ul id="progressbar">
-                                            <li className="text-left " id="step1"><span className="orderdetailTopText">Order received</span><p className="orderdetailTopText2">12 Aug 2023</p></li>
-                                            <li className="text-center" id="step2"><span className="orderdetailTopText">In Transit</span><p className="orderdetailTopText2">13 Aug 2023</p></li>
-                                            <li className="text-center" id="step3"><span id="three" className="orderdetailTopText">Out for Delivery</span></li>
-                                            <li className="text-center" id="step4"><span className="orderdetailTopText">Delivered</span></li>
+                                            <li className="text-left cancelOrder1" id="step1"><span className="orderdetailTopText">Order received</span><p className="orderdetailTopText2">12 Aug 2023</p></li>
+                                            <li className="text-center cancelOrder2" id="step2"><span className="orderdetailTopText">Cancelled</span><p className="orderdetailTopText2">13 Aug 2023</p></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -101,26 +99,26 @@ function CancelOrder() {
                             <div className="col-lg-12  orderdetaiRow3Cont">
                               <h5 className="mb-2 orderdetailBottheading" >Tracking history</h5>
                               <div className='d-flex gap-5 d-grid gap-lg-5'>
-                                <ul className="list-unstyled">
-                                        <li className="cancelOrderBottText ">9th Dec 2023 <span>at 10:00pm</span></li>
-                                        <li className="cancelOrderBottText">9th Dec 2023 <span>at 13:00pm</span></li>
+                                    <ul className="list-unstyled">
+                                        <li className="cancelOrderBottText ">8th Dec 2023 <span>at 15:02pm</span></li>
+                                        <li className="cancelOrderBottText">8th Dec 2023 <span>at 13:26pm</span></li>
                                     </ul>
-                                    <div class="progress-container">
-                                        <div class="step-circle"></div>
+                                    <div class="progress-container2">
+                                        <div class="step-circle-cancelOrder"></div>
                                         <div class="step-circle2"></div>
                                         <div class="progress-bar" id="myProgressBar"></div>
                                     </div>
                                     <ul className="list-unstyled">
                                         <li className="cancelOrderBottText">
-                                          Out for delivery
+                                           Order Cancelled
                                           <span>
-                                           from janakpuri center
+                                           Reason: Placed an order by accident
                                           </span>
                                         </li>
                                         <li className="cancelOrderBottText">
-                                          In Transit
+                                           Order Confirmed
                                           <span>
-                                            From Mumbai to Delhi
+                                            Shipment order created and confirmed by your merchant
                                           </span>
                                         </li>
                                     </ul>

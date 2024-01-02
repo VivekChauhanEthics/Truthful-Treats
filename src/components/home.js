@@ -1,10 +1,12 @@
 import React from 'react'
 import "../css/style.css";
 import "../Js/custom.js";
+import { NavLink } from 'react-router-dom';
 import OwlCarousel from 'react-owl-carousel';
 // components
 import  Header   from './header';
 import  Footer   from './footer';
+
 //images
 import HomePgBanner from "../images/Homepage Main Banner.png"
 //shop by catyegory
@@ -94,38 +96,38 @@ function Home() {
                       <h2 className="heading-text justify-content-center mb-5">SHOP BY CATAGORY</h2>
                       <div className="container ">
                           <div className="row justify-content-center catagoryRow">
-                                  <div className="card catagorycard border-0 text-center cursor-pointer">
-                                      <img src={ShopByCat1} className="card-img-top img-fluid catagoryImg" alt="cashew"/>
-                                      <p className="card-text CardText mb-3">Cashew</p>
-                                  </div>
-                                  <div className="card catagorycard border-0 text-center cursor-pointer">
-                                      <img src={ShopByCat2} className="card-img-top img-fluid catagoryImg" alt="almonds"/>
-                                      <p className="card-text CardText mb-3">Almonds</p>
-                                  </div>
-                                  <div className="card catagorycard border-0 text-center cursor-pointer">
-                                      <img src={ShopByCat3} className="card-img-top img-fluid catagoryImg" alt="raisins"/>
-                                      <p className="card-text CardText mb-3">Raisins</p>
-                                  </div>
-                                  <div className="card catagorycard border-0 text-center cursor-pointer">
-                                      <img src={ShopByCat4} className="card-img-top img-fluid catagoryImg" alt="pista"/>
-                                      <p className="card-text CardText mb-3">Pistachios</p>
-                                  </div>
-                                  <div className="card catagorycard border-0 text-center cursor-pointer">
-                                      <img src={ShopByCat5} className="card-img-top img-fluid catagoryImg" alt="mix" />
-                                      <p className="card-text CardText mb-3">Nut Mix</p>
-                                  </div>
-                                  <div className="card catagorycard border-0 text-center cursor-pointer">
-                                      <img src={ShopByCat6} className="card-img-top img-fluid catagoryImg" alt="blueberry" />
-                                      <p className="card-text CardText mb-3">Blueberry</p>
-                                  </div>
-                                  <div className="card catagorycard border-0 text-center cursor-pointer">
-                                      <img src={ShopByCat7} className="card-img-top img-fluid catagoryImg" alt="cranberry" />
-                                      <p className="card-text CardText mb-3">Cranberry</p>
-                                  </div>
-                                  <div className="card catagorycard border-0 text-center cursor-pointer">
-                                      <img src={ShopByCat8} className="card-img-top img-fluid catagoryImg" alt="walnut" />
-                                      <p className="card-text CardText mb-3">Walnut</p>
-                                  </div>
+                                <div className="card catagorycard border-0 text-center cursor-pointer">
+                                    <img src={ShopByCat1} className="card-img-top img-fluid catagoryImg" alt="cashew"/>
+                                    <p className="card-text CardText mb-3">Cashew</p>
+                                </div>
+                                <div className="card catagorycard border-0 text-center cursor-pointer">
+                                    <img src={ShopByCat2} className="card-img-top img-fluid catagoryImg" alt="almonds"/>
+                                    <p className="card-text CardText mb-3">Almonds</p>
+                                </div>
+                                <div className="card catagorycard border-0 text-center cursor-pointer">
+                                    <img src={ShopByCat3} className="card-img-top img-fluid catagoryImg" alt="raisins"/>
+                                    <p className="card-text CardText mb-3">Raisins</p>
+                                </div>
+                                <div className="card catagorycard border-0 text-center cursor-pointer">
+                                    <img src={ShopByCat4} className="card-img-top img-fluid catagoryImg" alt="pista"/>
+                                    <p className="card-text CardText mb-3">Pistachios</p>
+                                </div>
+                                <div className="card catagorycard border-0 text-center cursor-pointer">
+                                    <img src={ShopByCat5} className="card-img-top img-fluid catagoryImg" alt="mix" />
+                                    <p className="card-text CardText mb-3">Nut Mix</p>
+                                </div>
+                                <div className="card catagorycard border-0 text-center cursor-pointer">
+                                    <img src={ShopByCat6} className="card-img-top img-fluid catagoryImg" alt="blueberry" />
+                                    <p className="card-text CardText mb-3">Blueberry</p>
+                                </div>
+                                <div className="card catagorycard border-0 text-center cursor-pointer">
+                                    <img src={ShopByCat7} className="card-img-top img-fluid catagoryImg" alt="cranberry" />
+                                    <p className="card-text CardText mb-3">Cranberry</p>
+                                </div>
+                                <div className="card catagorycard border-0 text-center cursor-pointer">
+                                    <img src={ShopByCat8} className="card-img-top img-fluid catagoryImg" alt="walnut" />
+                                    <p className="card-text CardText mb-3">Walnut</p>
+                                </div>
                           </div>
                       </div>
                   </div>
@@ -159,7 +161,7 @@ function Home() {
                           <div className="item owlCarouselItems">
                               <div className="card bestSellerCard">
                                   <img src={BestSeller2} alt="discount" className="img-fluid bestdiscountImg" />
-                                  <img src={BestSeller3} className="img-fluid card-img-top bestSellerImg cursor-pointer" alt="..."/>
+                                  <NavLink to="/pdp"><img src={BestSeller3} className="img-fluid card-img-top bestSellerImg cursor-pointer" alt="..."/></NavLink>
                                   <div className="card-body">
                                     <h5 className="card-title cardtitle mb-3">Premium Cashews Nuts</h5>
                                     <p className="card-text pb-5"><span className="cardPrice text-success">Rs. 249.00</span><span className="cardDiscount "> Rs. 349.00</span></p>
@@ -170,7 +172,7 @@ function Home() {
                           <div className="item">
                               <div className="card bestSellerCard ">
                                   <img src={BestSeller4} alt="discount" className="img-fluid bestdiscountImg" />
-                                  <img src={BestSeller5} className="img-fluid card-img-top bestSellerImg cursor-pointer" alt="..."/>
+                                  <NavLink to="/pdp"><img src={BestSeller5} className="img-fluid card-img-top bestSellerImg cursor-pointer" alt="..."/></NavLink>
                                   <div className="card-body">
                                       <h5 className="card-title cardtitle mb-3">Premium California Almond</h5>
                                       <p className="card-text pb-5"><span className="cardPrice text-success">Rs. 249.00</span><span className="cardDiscount "> Rs. 349.00</span></p>
@@ -181,7 +183,7 @@ function Home() {
                           <div className="item">
                               <div className="card bestSellerCard ">
                                   <img src={BestSeller6} alt="discount" className="img-fluid bestdiscountImg" />
-                                  <img src={BestSeller7} className="img-fluid card-img-top bestSellerImg cursor-pointer" alt="..."/>
+                                  <NavLink to="/pdp"><img src={BestSeller7} className="img-fluid card-img-top bestSellerImg cursor-pointer" alt="..."/></NavLink>
                                   <div className="card-body">
                                       <h5 className="card-title cardtitle mb-3">Premium California Pistachios</h5>
                                       <p className="card-text pb-5"><span className="cardPrice text-success">Rs. 249.00</span><span className="cardDiscount "> Rs. 349.00</span></p>
@@ -192,7 +194,7 @@ function Home() {
                           <div className="item">
                               <div className="card bestSellerCard ">
                                   <img src={BestSeller8} alt="discount" className="img-fluid bestdiscountImg" />
-                                  <img src={BestSeller9} className="img-fluid card-img-top bestSellerImg cursor-pointer" alt="..."/>
+                                  <NavLink to="/pdp"><img src={BestSeller9} className="img-fluid card-img-top bestSellerImg cursor-pointer" alt="..."/></NavLink>
                                   <div className="card-body">
                                       <h5 className="card-title cardtitle mb-3">Premium Raisins</h5>
                                       <p className="card-text pb-5"><span className="cardPrice text-success">Rs. 249.00</span><span className="cardDiscount "> Rs. 349.00</span></p>
@@ -203,7 +205,7 @@ function Home() {
                           <div className="item">
                               <div className="card bestSellerCard">
                                   <img src={BestSeller2} alt="discount" className="img-fluid bestdiscountImg" />
-                                  <img src={BestSeller3} className="img-fluid card-img-top bestSellerImg cursor-pointer" alt="..."/>
+                                  <NavLink to="/pdp"><img src={BestSeller3} className="img-fluid card-img-top bestSellerImg cursor-pointer" alt="..."/></NavLink>
                                   <div className="card-body">
                                     <h5 className="card-title cardtitle mb-3">Premium Cashews Nuts</h5>
                                     <p className="card-text pb-5"><span className="cardPrice text-success">Rs. 249.00</span><span className="cardDiscount "> Rs. 349.00</span></p>
@@ -214,7 +216,7 @@ function Home() {
                           <div className="item">
                               <div className="card bestSellerCard">
                                   <img src={BestSeller4} alt="discount" className="img-fluid bestdiscountImg" />
-                                  <img src={BestSeller5} className="img-fluid card-img-top bestSellerImg cursor-pointer" alt="..."/>
+                                  <NavLink to="/pdp"><img src={BestSeller5} className="img-fluid card-img-top bestSellerImg cursor-pointer" alt="..."/></NavLink>
                                   <div className="card-body">
                                       <h5 className="card-title cardtitle mb-3">Premium California Almond</h5>
                                       <p className="card-text pb-5"><span className="cardPrice text-success">Rs. 249.00</span><span className="cardDiscount "> Rs. 349.00</span></p>
@@ -323,7 +325,7 @@ function Home() {
                       <div className="row justify-content-center CombosRow">
                           <div className="card CombosCard justify-content-center pb-2">
                               <img src={CombosSectImg2} alt="discount" className="img-fluid CombosCardDisImg" />
-                              <img src={CombosSectImg3} className="img-fluid card-img-top CombosCardImg cursor-pointer mb-2" alt="..."/>
+                              <NavLink to="/pdp"><img src={CombosSectImg3} className="img-fluid card-img-top CombosCardImg cursor-pointer mb-2" alt="..."/></NavLink>
                               <div className="card-body">
                                   <h5 className="card-title Comboscardtitle mb-3">Cashews (500g) + Almonds (500g)</h5>
                                   <p className="card-text pb-4"><span className="cardPrice text-success">Rs. 249.00</span><span className="cardDiscount "> Rs. 349.00</span></p>
@@ -332,7 +334,7 @@ function Home() {
                           </div>
                           <div className="card CombosCard pb-2">
                               <img src={CombosSectImg4} alt="discount" className="img-fluid CombosCardDisImg" />
-                              <img src={CombosSectImg5} className="img-fluid card-img-top CombosCardImg cursor-pointer mb-2" alt="..."/>
+                              <NavLink to="/pdp"><img src={CombosSectImg5} className="img-fluid card-img-top CombosCardImg cursor-pointer mb-2" alt="..."/></NavLink>
                               <div className="card-body">
                                   <h5 className="card-title Comboscardtitle mb-3">Healthy Trail Mix (500 g) + Cranberries (200 g)</h5>
                                   <p className="card-text pb-4"><span className="cardPrice text-success">Rs. 249.00</span><span className="cardDiscount "> Rs. 349.00</span></p>
@@ -341,7 +343,7 @@ function Home() {
                           </div>
                           <div className="card CombosCard pb-2">
                               <img src={CombosSectImg6} alt="discount" className="img-fluid CombosCardDisImg" />
-                              <img src={CombosSectImg7} className="img-fluid card-img-top CombosCardImg cursor-pointer mb-2" alt="..."/>
+                              <NavLink to="/pdp"><img src={CombosSectImg7} className="img-fluid card-img-top CombosCardImg cursor-pointer mb-2" alt="..."/></NavLink>
                               <div className="card-body">
                                   <h5 className="card-title Comboscardtitle mb-3">Pistachios (250 g) & Raisins (250 g)</h5>
                                   <p className="card-text pb-4"><span className="cardPrice text-success">Rs. 249.00</span><span className="cardDiscount "> Rs. 349.00</span></p>
@@ -350,7 +352,7 @@ function Home() {
                           </div>
                           <div className="card CombosCard pb-2">
                               <img src={CombosSectImg8} alt="discount" className="img-fluid CombosCardDisImg" />
-                              <img src={CombosSectImg9} className="img-fluid card-img-top CombosCardImg cursor-pointer mb-2" alt="..."/>
+                              <NavLink to="/pdp"><img src={CombosSectImg9} className="img-fluid card-img-top CombosCardImg cursor-pointer mb-2" alt="..."/></NavLink>
                               <div className="card-body">
                                   <h5 className="card-title Comboscardtitle mb-3">Cashews (500 g) & Pistachios (450 g)</h5>
                                   <p className="card-text pb-4"><span className="cardPrice text-success">Rs. 249.00</span><span className="cardDiscount "> Rs. 349.00</span></p>
@@ -395,24 +397,24 @@ function Home() {
                       <h2 className="heading-text text-center mb-5">BLOGS</h2>
                       <div className="row justify-content-center BlogRow">
                         <div className="card BlogCard bg-transparent border-0">
-                            <img src={BlogImg1} className="img-fluid card-img-top BlogImg cursor-pointer" alt="..."/>
+                            <NavLink to="/blogdetail"><img src={BlogImg1} className="img-fluid card-img-top BlogImg cursor-pointer" alt="..."/></NavLink>
                             <div className="card-body">
                             <h5 className="card-title Blogscardtitle cursor-pointer">Almonds Unleashed: The Nutritional Marvel Behind Truthful Treats</h5>
-                            <p className="card-text cursor-pointer"><span className="BlogsReadMore">Read More</span></p>
+                            <NavLink to="/blogdetail" className="card-text cursor-pointer"><span className="BlogsReadMore">Read More</span></NavLink>
                             </div>
                         </div>
                         <div className="card BlogCard bg-transparent border-0">
-                            <img src={BlogImg2} className="img-fluid card-img-top BlogImg cursor-pointer" alt="..."/>
+                            <NavLink to="/blogdetail"><img src={BlogImg2} className="img-fluid card-img-top BlogImg cursor-pointer" alt="..."/></NavLink>
                             <div className="card-body">
                                 <h5 className="card-title Blogscardtitle cursor-pointer">From Orchard to Your Table: The Journey of Truthful Treats.</h5>
-                                <p className="card-text cursor-pointer"><span className="BlogsReadMore ">Read More</span></p>
+                                <NavLink to="/blogdetail" className="card-text cursor-pointer"><span className="BlogsReadMore ">Read More</span></NavLink>
                             </div>
                         </div>
                         <div className="card BlogCard bg-transparent border-0">
-                            <img src={BlogImg3} className="img-fluid card-img-top BlogImg cursor-pointer" alt="..."/>
+                            <NavLink to="/blogdetail"><img src={BlogImg3} className="img-fluid card-img-top BlogImg cursor-pointer" alt="..."/></NavLink>
                             <div className="card-body">
                                 <h5 className="card-title Blogscardtitle cursor-pointer">Unboxing Truthful Treats - Your Ultimate Snacking Experience.</h5>
-                                <p className="card-text cursor-pointer"><span className="BlogsReadMore ">Read More</span></p>
+                                <NavLink to="/blogdetail" className="card-text cursor-pointer"><span className="BlogsReadMore ">Read More</span></NavLink>
                             </div>
                         </div>
                       </div>
